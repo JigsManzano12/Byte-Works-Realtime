@@ -29,24 +29,19 @@ Realtime.py is a Python script that detects violence in video streams using SSD 
    ```
 Additionally, you may need to install the TensorFlow Object Detection API and its dependencies.
 
-Model Files:
+2. **Model Files:**
 Download and place the SSD MobileNet V2 model in the specified directory (ssd_mobilenet_v2_320x320_coco17_tpu-8/saved_model).
 Ensure the violence detection model is available at Model_Used/Violence_Model/Violence_model.h5.
 Ensure the label map is available at models/research/object_detection/data/mscoco_label_map.pbtxt.
 ## Usage
-Prepare Video Files:
-
-Place video files for testing in the test_video directory.
-Run realtime.py:
-
-Execute the script using the following command:
-
-bash
-Copy code
+1. **Prepare Video Files:**
+- Place video files for testing in the test_video directory.
+2. **Run realtime.py:**
+-Execute the script using the following command:
 ```bash
 python realtime.py
 ```
-## Output:
+3. **Output:**
 - Recorded violence segments will be saved in the static/recorded_fights directory.
 - Real-time streaming of processed frames can be accessed (details depend on implementation).
 
@@ -76,7 +71,7 @@ Converts processed frames to JPEG format for real-time streaming.
 [Specify the license under which this script is distributed.]
 
 ## Author
-[Your name or organization]
+Gerard Jose Manzano
 
 ## Notes
 - Customize directories and file paths as needed for your setup.
